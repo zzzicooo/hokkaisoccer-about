@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.top-navigation{
+    width: 100%;
+    display: flex;
+    background-color: #ffff33;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navigation-logo{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-logo:hover{
+    color: #00ff00;
+}
+
+.navigation-logo img{
+    display: block;
+    width: auto;
+    height: 70px;
+    padding: 10px;
+}
+
+.logo-content{
+    text-align: center;
+    align-items: center;
+}
+
+.navigation-box{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-content{
+    display: flex;
+}
+
+.navigation-content li{
+    margin: 0 15px;
+}
+
+.navigation-content li a:hover{
+    color: #00ff00;
+}
+
+.about-spirit{
+    font-style: italic;
+    text-align: center;
+    margin-top: 130px;
+    letter-spacing: 0.8rem;
+}
+
+.about-spirit-block{
+    width: 70%;
+    margin: 150px auto;
+    background-image: url(../img/logo2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: downfadeup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes downfadeup{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-spirit-block h1{
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.about-spirit-block h1:nth-child(1){
+    text-align: left;
+    animation-name: fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+        
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-spirit-block h1:nth-child(2){
+    text-align: right;
+    animation-name: fadeInAnime;
+    animation-duration:1s;
+    animation-delay: 2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+        
+    @keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-motto{
+    font-style: italic;
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 0.8rem;
+}
+
+.about-motto-headline{
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    animation-name: fadeup;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.motto1{
+    background-image: linear-gradient(180deg, transparent 0 60%, #ffff00 100%);
+    border-radius: 10px;
+}
+
+.motto2{
+    background-image: linear-gradient(180deg, transparent 0 60%, #00ff33 100%);
+    border-radius: 10px;
+}
+
+.mar-top{
+    margin-top: 5rem;
+}
+
+.mar-top2{
+    margin-top: 10rem;
+}
+
+.about-motto-sentence{
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 78%;
+    margin: 0 auto;
+    line-height: 3rem;
+    animation-name: fadeup;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeup {
+    from {
+    opacity: 0;
+    transform: translateY(40px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.scrolltrigger{
+    opacity: 0;
+}
+
+.scroll2trigger{
+    opacity: 0;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 45vh;
+    background-color: #00cc33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 10rem;
+}
+
+.school-address{
+    padding-left: 5%;
+    color: #fff;
+}
+
+.footer-nav li{
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.footer-nav li a{
+    color: #fff;
+}
+
+footer iframe{
+    width: 40%;
+    padding-right: 5%;
+}
